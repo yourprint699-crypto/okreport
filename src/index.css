@@ -9,34 +9,6 @@
     src: url(../public/fonts/Lausanne-500.woff2);
 }
 
-/* Smooth scrolling for the entire page */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Ensure body allows scrolling */
-body {
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-/* Custom scrollbar styling */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #D3FD50;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #b8e03e;
-}
 
 .moveX{
     animation-name: moveAnimation;
@@ -61,20 +33,4 @@ body {
     to{
         transform: translateX(-100%);
     }
-}
-
-/* Parallax video background effect */
-.parallax-video {
-    will-change: transform;
-}
-
-/* Smooth transitions for interactive elements */
-.interactive-element {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Enhanced hover states */
-.enhanced-hover:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }

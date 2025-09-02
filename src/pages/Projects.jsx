@@ -103,35 +103,35 @@ const Projects = () => {
   })
 
   return (
-    <div className='responsive-container lg:py-16 py-8 sm:py-12 mb-[50vh] bg-white'>
+    <div className='lg:px-12 px-6 lg:py-16 py-8 mb-[50vh] bg-white'>
       {/* Page Header */}
-      <div className='pt-[25vh] sm:pt-[30vh] lg:pt-[35vh] mb-12 sm:mb-16'>
-        <h1 className='font-[font2] text-6xl sm:text-7xl md:text-8xl lg:text-[9.5vw] uppercase text-black text-center lg:text-left'>
+      <div className='pt-[35vh] mb-16'>
+        <h1 className='font-[font2] lg:text-[9.5vw] text-7xl uppercase text-black'>
           Projets
         </h1>
       </div>
 
-      <div className='projects-content space-y-16 sm:space-y-20 lg:space-y-24'>
+      <div className='projects-content space-y-24'>
         {/* Teasers Section */}
-        <section className='space-y-6 sm:space-y-8'>
-          <h2 className='section-title font-[font2] text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase text-center text-black'>
+        <section className='space-y-8'>
+          <h2 className='section-title font-[font2] lg:text-6xl text-4xl uppercase text-center text-black'>
             Teasers
           </h2>
           <VideoGrid 
             videos={teasers} 
-            gridCols="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            gridCols="lg:grid-cols-3 md:grid-cols-2 grid-cols-1"
             aspectRatio="aspect-video"
           />
         </section>
 
         {/* Highlights Section */}
-        <section className='space-y-6 sm:space-y-8'>
-          <h2 className='section-title font-[font2] text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase text-center text-black'>
+        <section className='space-y-8'>
+          <h2 className='section-title font-[font2] lg:text-6xl text-4xl uppercase text-center text-black'>
             Highlights
           </h2>
           <VideoGrid 
             videos={highlights} 
-            gridCols="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+            gridCols="lg:grid-cols-4 md:grid-cols-2 grid-cols-1"
             aspectRatio="aspect-video"
           />
         </section>

@@ -98,13 +98,13 @@ const WhyUsSection = () => {
 
   return (
     <section ref={sectionRef} className='min-h-screen bg-white text-black relative z-30'>
-      <div className='responsive-container lg:py-24 py-12 sm:py-16'>
+      <div className='container mx-auto lg:px-12 px-6 lg:py-24 py-16'>
         {/* Section Header */}
-        <div className='text-center mb-12 sm:mb-16'>
-          <h2 className='why-us-title font-[font2] text-5xl sm:text-6xl md:text-7xl lg:text-[8vw] uppercase mb-6 sm:mb-8 leading-tight'>
+        <div className='text-center mb-16'>
+          <h2 className='why-us-title font-[font2] lg:text-[8vw] text-6xl uppercase mb-8 leading-tight'>
             Why Us
           </h2>
-          <p className='intro-text font-[font1] responsive-text-base sm:responsive-text-lg lg:text-xl max-w-sm sm:max-w-xl lg:max-w-3xl mx-auto leading-relaxed text-gray-700 px-4'>
+          <p className='intro-text font-[font1] lg:text-xl text-lg lg:max-w-3xl max-w-xl mx-auto leading-relaxed text-gray-700'>
             K72 est une agence qui pense chaque action pour nourrir la marque. 
             Nous cherchons la friction qui crée l'étincelle pour générer de l'émotion 
             et bâtir des marques influentes.
@@ -112,41 +112,41 @@ const WhyUsSection = () => {
         </div>
 
         {/* Benefits Grid */}
-        <div className='benefits-grid grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-6xl mx-auto px-4'>
+        <div className='benefits-grid grid lg:grid-cols-2 grid-cols-1 gap-8 lg:gap-12 lg:max-w-6xl max-w-4xl mx-auto'>
           {benefits.map((benefit, index) => (
             <div 
               key={index}
-              className='benefit-card group bg-gray-50 hover:bg-gray-100 active:bg-gray-100 rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-10 transition-all duration-500 hover:shadow-xl hover:-translate-y-2 active:shadow-lg active:-translate-y-1 touch-target'
+              className='benefit-card group bg-gray-50 hover:bg-gray-100 rounded-2xl p-8 lg:p-10 transition-all duration-500 hover:shadow-xl hover:-translate-y-2'
             >
               {/* Icon */}
-              <div className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 sm:mb-6 group-hover:scale-110 group-active:scale-110 transition-transform duration-300'>
+              <div className='text-6xl lg:text-7xl mb-6 group-hover:scale-110 transition-transform duration-300'>
                 {benefit.icon}
               </div>
               
               {/* Content */}
-              <div className='space-y-3 sm:space-y-4'>
-                <h3 className='font-[font2] responsive-text-xl sm:responsive-text-2xl lg:text-3xl uppercase text-black group-hover:text-[#D3FD50] group-active:text-[#D3FD50] transition-colors duration-300'>
+              <div className='space-y-4'>
+                <h3 className='font-[font2] text-2xl lg:text-3xl uppercase text-black group-hover:text-[#D3FD50] transition-colors duration-300'>
                   {benefit.title}
                 </h3>
-                <p className='font-[font1] responsive-text-sm sm:responsive-text-base lg:text-lg leading-relaxed text-gray-600'>
+                <p className='font-[font1] text-base lg:text-lg leading-relaxed text-gray-600'>
                   {benefit.description}
                 </p>
               </div>
 
               {/* Hover accent line */}
-              <div className='w-0 group-hover:w-full group-active:w-full h-1 bg-[#D3FD50] transition-all duration-500 mt-4 sm:mt-6 rounded-full'></div>
+              <div className='w-0 group-hover:w-full h-1 bg-[#D3FD50] transition-all duration-500 mt-6 rounded-full'></div>
             </div>
           ))}
         </div>
 
         {/* Call to Action */}
-        <div className='text-center mt-12 sm:mt-16 lg:mt-20 px-4'>
+        <div className='text-center mt-20'>
           <div className='inline-flex items-center gap-4'>
-            <Link to='/projects' className='touch-target border-2 lg:border-3 hover:border-[#D3FD50] hover:text-[#D3FD50] hover:bg-[#D3FD50] hover:text-black active:border-[#D3FD50] active:text-[#D3FD50] active:bg-[#D3FD50] active:text-black h-12 sm:h-14 md:h-15 lg:h-16 flex items-center px-4 sm:px-6 lg:px-8 border-black rounded-full uppercase transition-all duration-300 cursor-pointer group active:scale-95'>
-              <span className='font-[font2] responsive-text-sm sm:responsive-text-base lg:text-xl group-hover:scale-105 group-active:scale-105 transition-transform duration-300 whitespace-nowrap'>
+            <div className='lg:border-3 border-2 hover:border-[#D3FD50] hover:text-[#D3FD50] hover:bg-[#D3FD50] hover:text-black lg:h-16 h-12 flex items-center px-6 lg:px-8 border-black rounded-full uppercase transition-all duration-300 cursor-pointer group'>
+              <span className='font-[font2] text-lg lg:text-xl group-hover:scale-105 transition-transform duration-300'>
                 Découvrir nos projets
               </span>
-            </Link>
+            </div>
           </div>
         </div>
       </div>

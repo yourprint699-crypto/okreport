@@ -3,7 +3,7 @@ import VideoCard from './VideoCard'
 
 const VideoGrid = ({ videos, gridCols, aspectRatio }) => {
   return (
-    <div className={`grid ${gridCols} gap-8 lg:gap-12`}>
+    <div className={`grid ${gridCols} gap-4 sm:gap-6 md:gap-8 lg:gap-12`}>
       {videos.map((video, index) => (
         <VideoCard 
           key={index}
